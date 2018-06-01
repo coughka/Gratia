@@ -1,0 +1,81 @@
+form {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-gap:1rem;
+    width:75%;
+    margin:0 auto;
+    background-color:rgba(0,0,0,0.05);
+    padding:1rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+
+form label {
+    display:none;
+}
+
+input {
+    border:none;
+    padding:1rem 0.5rem;
+    font-size:0.707rem;
+    font-family:"Montserrat",sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+input[type="date"], input[type = "text"], input[type = "tel"], input[type = "email"], input[list="dish"] {
+    grid-column:span 6;
+}
+
+input[type="date"] {
+    text-align:center;
+}
+
+input[list="dish"] {
+    background-color:black;
+    color:rgba(216,155,100,1);
+}
+
+input[list="dish"]::placeholder {
+    color:rgba(216,155,100,1);
+}
+
+input[type="time"], input[type="number"] {
+    grid-column:span 3;
+}
+
+textarea, input[type = "submit"] {
+    grid-column:span 12;
+}
+
+input[type = "submit"] {
+    background-color:rgba(216,155,100,1);
+    color:white;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+textarea {
+    padding:1rem 0.5rem;
+    height:20vh;
+    border:0;
+}
+
+.book-a-table {
+    margin-bottom:5rem;
+}
+
+@media only screen and (max-width: 425px) {
+    form {
+        width:95%;
+    }
+
+    .book-a-table {
+        margin-bottom:2.5rem;
+    }
+
+    .footer-content .divider {
+        display:none;
+    }
+}

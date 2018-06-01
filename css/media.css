@@ -1,0 +1,124 @@
+@media only screen and (max-width: 768px) {
+    .dish-list-item, .dish-list-item:nth-child(2) {
+        grid-column:span 16;
+    }
+
+    .top-section-button {
+        grid-column:span 12;
+        align-self:center;
+        grid-row:2;
+    }
+
+    .top-section-txt {
+        align-self:center;
+    }
+
+    .section-title, .how-we-list, .check {
+        margin:2.5rem 0;
+    }
+
+    .dish-list-item:nth-child(2) {
+        background-size:100%;
+    }
+
+    .details-container {
+        width:50%;
+    }
+
+    .footer-content .divider {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .details-container {
+        width:95%;
+    }
+
+    .top-section-button, .how-we-list-item {
+        grid-column:span 12;
+    }
+
+    .top-section-txt {
+        display:none;
+    }
+
+    .section-title {
+        margin:2.5rem 0;
+    }
+
+}
+
+/*CHICK_BUR*/
+
+@media only screen and (max-width: 425px) {
+    .dish-photo, .dish-description {
+        grid-column:span 12;
+    }
+
+    .dish-photo img {
+        width:100%;
+        height: auto;
+    }
+
+    .chicken-burger-content {
+        width:95%;
+        height:auto;
+    }
+
+    .components {
+        width:95%;
+        margin:0 auto;
+    }
+
+    .description-title h3 {
+        margin:1rem 0;
+    }
+
+    .chicken-burger {
+        margin:2.5rem 0;
+    }
+}
+
+/*MENU*/
+
+@media only screen and (max-width: 1024px) {
+    .menu-item {
+        grid-column:span 6;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-item .divider {
+        display:none;
+    }
+
+    .menu-item p, .menu-item h3 {
+        margin:1rem 0;
+    }
+
+    .menu {
+        margin:2.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .menu-item {
+        grid-column:span 12;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    form {
+        width:95%;
+    }
+
+    .book-a-table {
+        margin-bottom:2.5rem;
+    }
+
+    .footer-content .divider {
+        display:none;
+    }
+}

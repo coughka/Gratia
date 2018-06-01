@@ -1,0 +1,375 @@
+
+@import url("normalize.css");
+@import url("../fonts/webfonts/fontawesome-all.css");
+@import url("menu-styles.css");
+@import url("book.css");
+@import url("chick-bur.css");
+@import url("media.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+body {
+    font-family:"Montserrat", sans-serif;
+}
+
+p {
+    font-family:"Crimson",serif;
+    
+    font-size:1rem;
+    text-align:center;
+}
+
+header {
+    background-color:rgba(22,27,41,1);
+    height:10vh; 
+}
+
+.section-title {
+    margin:5rem 0;
+}
+
+.section-title h2{
+    font-family:"Montserrat", sans-serif;
+    text-align:center;
+    font-size:3rem;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:0;
+    user-select: none;
+}
+
+.navbar-brand, .nav-item a {
+    font-family:"Montserrat", sans-serif;
+    color:white;
+    user-select: none;
+}
+
+.navbar-brand:hover, .nav-item a:hover {
+    color:rgba(215,155,100,1);
+}
+
+.navbar-toggler-icon {
+    color:white;
+}
+
+.top-section {
+    background-color:rgba(22,27,41,1);
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-items: center;
+    align-items:center;
+    height:90vh;
+    
+}
+
+.carousel-item img {
+    margin:0 auto;
+    z-index:999;
+}
+
+.section-title {
+    grid-column:span 12;
+    align-items:center;
+    padding-top:1rem;
+}
+
+.carousel {
+    grid-column:span 12;   
+}
+
+button {
+    color:rgba(216,155,100,1);
+    background:none;
+    border:1px solid rgba(215,155,100,1);
+    padding:1rem 2rem;
+}
+
+.top-section-button {
+    grid-column:9/span 4;
+    text-transform:uppercase;
+    align-self:start;
+}
+
+button a {
+    color:inherit;
+}
+
+button a:hover {
+    color:rgba(216,155,100,0.9);
+    text-decoration:none;
+}
+
+.top-section-txt {
+    grid-column:6/span 2;
+    text-align:center;
+    white-space: nowrap;
+    color:rgba(72,84,127,1);
+    font-style:italic;
+    align-self:start;
+    padding:1rem 0;       
+}
+
+.top-section-txt i {
+    color:rgba(72,84,127,1);
+    font-size:2rem;
+    margin:1rem 0;
+}
+
+/*PERFECTION*/
+
+.perfection-section, .how-we, .menu-title, .book-a-table-title {
+    background-image:url("../images/Gratia.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.perfection-section p, .how-we p, .menu-title p, .menu-content p {
+    font-style:italic;
+}
+
+.dish-list-content p{
+    width:75%;
+    margin:1rem auto;
+}
+
+.top-section p {
+    margin:0;
+}
+
+.desserts {
+    background:linear-gradient(to right, rgba(35, 35, 35, 0.9), rgba(25,25,25, 0.8)), url("../images/Photo.png");
+
+}
+
+.smothies {
+    background-image:url("../images/Photo-2.png");
+
+}
+
+.breakfast {
+    background-image:linear-gradient(to right, rgba(35, 35, 35, 0.9), rgba(25,25,25, 0.8)), url("../images/Photo-1.png");
+}
+
+.dish-list, .how-we-list {
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns:repeat(16,1fr);
+    margin:2.5rem 0;
+    align-items:center;
+}
+
+.how-we-list {
+    grid-template-columns:repeat(12,1fr);
+    margin-bottom:5rem;
+}
+
+.dish-list-item, .how-we-list-item {
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    text-align:center;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    background-position: center;
+    grid-column:span 6;
+    height:calc(25vh + 10vw);   
+}
+
+.how-we-list-item {
+    grid-column:span 4;
+}
+
+.dish-list-content, .how-we-list-content {
+    width:95%;
+    margin:0 auto;
+}
+
+.details-content h3, .how-we-list-content h3, .article-title, .article-title h3{
+    font-family:"Montserrat", sans-serif;
+    color:rgba(215,155,100,1);
+    font-size:calc(1rem + 1.5vw);
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.how-we-list-content h3 {
+    font-size:1.414rem;
+}
+
+.details-content h3, .menu-item h3 {
+    color:black;
+    align-self:end;
+    text-align:center;
+    
+}
+
+.details-content button {
+    align-self:start;
+    text-transform:uppercase;
+}
+
+.dish-list-item p, .details-content p, .how-we-list p {
+    color:white;
+    font-style:italic;
+}
+
+.details-content p, .how-we-list p {
+    color:rgba(35, 35, 35, 1);
+}
+
+.dish-list-item:nth-child(2) {
+    grid-column:span 4;
+    background-size:auto 100%;
+    align-items:end;
+    height:calc(40vh + 15vw); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dish-list-item:nth-child(2) h3 {
+    color:black;
+}
+
+.dish-list-item:nth-child(2) p {
+    color:rgba(25,25,25, 0.8);
+}
+
+.prod p {
+    color:white;
+}
+
+.divider {
+    width:15%;
+    margin:0 auto;
+    background-color:rgba(215,155,100,1);
+    height:2.5px;
+}
+
+.smothies .divider {
+    background-color:rgba(25,25,25, 0.8);
+}
+
+footer .divider, .menu-item .divider {
+    width:5%;
+    height:1.25px;
+    background-color:rgba(0,0,0,0.1);
+    margin:1rem auto;
+}
+
+.check {
+    text-align:center;
+    text-transform:uppercase;
+    margin:5rem 0;
+}
+
+.check a {
+    color:rgba(215,155,100,1);
+    border-bottom:1px solid rgba(215,155,100,1);
+    padding-bottom:1rem;
+}
+
+.check a:hover {
+    color:rgba(215,155,100,0.5);
+    border-bottom:1px solid rgba(215,155,100,0.5);
+    text-decoration:none;
+}
+
+/* DETAILS */
+
+.details {
+    background-image:url("../images/details-photo-back.png");
+    background-size:100% auto;
+    display:grid;
+    align-items:center;
+    text-align:center;
+    height:calc(40vh + 15vw);
+}
+
+.details-content {
+    
+    border:1px solid rgba(22,27,41,1);
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    min-height:33vh;
+}
+
+.details-container {
+    padding:1rem;
+    background-color:white;
+    width:calc(15rem + 19vw);
+    margin:0 auto;   
+}
+
+/* HOW WE */
+
+.prod {
+    background-image:linear-gradient(to right, rgba(35, 35, 35, 0.9), rgba(25,25,25, 0.8));
+    
+}
+
+.beg, .loc {
+    background:linear-gradient(to right, rgba(35, 35, 35, 0.2), rgba(25,25,25, 0.1));
+    background-position:50% 50%;
+}
+
+/*FOOTER */
+footer {
+    border-top:1px solid rgba(0,0,0,0.1);
+}
+
+.footer-content {
+    margin:-3% auto;
+    display:grid;
+    align-items:center;
+    justify-items: center;
+}
+
+footer h4 {
+    margin:1rem 0;
+    font-size:1rem;
+    font-family:"Montserrat",sans-serif;
+    font-weight:700;
+}
+
+.logo {
+    background-color:rgba(255,255,255,1);
+}
+
+.logo img {
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:2.5rem;
+    padding:1rem;
+    width:5rem;
+}
+
+.social-bar {
+    margin:1rem 0;
+    
+}
+
+.social-bar i {
+    background:rgba(0,0,0,0.2);
+    border-radius:5rem;
+}
+
+.fa-facebook-f {
+    padding:1rem 1.25rem;
+}
+
+.fa-twitter, .fa-instagram {
+    padding:1rem;
+
+}
+
+.social-bar a {
+    color:white;
+}
+
+
+
+
+
+
+
+

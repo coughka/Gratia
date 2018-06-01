@@ -1,0 +1,83 @@
+.chicken-burger-content {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    width:75%;
+    margin:0 auto;
+    height:75vh;
+    justify-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.chicken-burger {
+    margin-bottom:5rem;
+}
+
+.dish-photo img {
+    width:75%;
+    height:75vh;
+    margin:0 auto;
+}
+
+.dish-photo, .dish-description {
+    grid-column:span 6;
+    align-self:center;   
+}
+
+.description-title h3, .price h3 {
+    text-align:center;
+    color:black;
+    font-size:calc(1rem + 1.5vw);
+    font-weight:700;
+    font-family:"Montserrat", sans-serif;
+}
+
+.description-title p {
+    font-style:italic;
+}
+
+.components {
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    padding-top:1.25rem;
+}
+
+.price, .components {
+    border-top:1px solid rgba(0,0,0,0.1);
+    margin:1.25rem 0;
+}
+
+.price h3 {
+    color:rgba(130,156,44,1);
+    font-size:calc(1rem + 1.5vw);
+    padding-top:1.25rem;
+}
+
+@media only screen and (max-width: 425px) {
+    .dish-photo, .dish-description {
+        grid-column:span 12;
+    }
+
+    .dish-photo img {
+        width:100%;
+        height: auto;
+    }
+
+    .chicken-burger-content {
+        width:95%;
+        height:auto;
+    }
+
+    .components {
+        width:95%;
+        margin:0 auto;
+    }
+
+    .description-title h3 {
+        margin:1rem 0;
+    }
+
+    .chicken-burger {
+        margin:2.5rem 0;
+    }
+}

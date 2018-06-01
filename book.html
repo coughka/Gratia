@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gratia Restaraunt - Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-4.1.1-dist/css/bootstrap.css" /> 
+	
+</head>
+<body>
+        <header class = "menu-header">
+                <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand col-8" href="index.html">
+                                <img src="images/Warstwa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                                Gratia
+                        </a>
+                        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-light" id="navbarNav">
+                            <ul class="navbar-nav navbar-light col-4">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </nav>
+        </header>
+        <section class = "book-a-table">
+                    <div class = "section-title book-a-table-title">
+                        <h2>Book a Table</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+            <form action="/action_page.php" autocomplete="on">
+                    <label for="GET-date">Date:</label>
+                    <input id="GET-date" type = "date">
+                    <label for="GET-time">Time:</label>
+                    <input id="GET-time" type="time">
+                    <label for="GET-number">Number of Guestes:</label>
+                    <input id="GET-number" type="number" min="1">
+                    <label for="GET-name">Name:</label>
+                    <input id="GET-name" type="text" name="firstname" placeholder="First name and Last name">
+                    <input id="GET-tel" type="tel" name="phone" placeholder="Phone Number">
+                    <input id="GET-email" type="email" name="email" placeholder="Email">
+                    
+                    <input list = "dish" name = "dish" placeholder = "Prepare Menu">
+                        <datalist id="dish" multiple>
+                            <option>Salad</option>
+                            <option>Soup</option>
+                            <option>Main Dish</option>
+                            <option>Dessert</option>
+                            <option>Drink</option>
+                        </select>
+                        </datalist>
+                    </input>
+                    <textarea placeholder = "Type Your Message"></textarea>
+                    <input type="submit" value = "send">
+
+            </form>
+
+        </section>
+        <footer>
+                <div class = "footer-content">
+                    <div class = "logo"><img src = "images/Warstwa.png"></div>
+                    <div class = "footer-title"><h4>Gratia Restaraunt</h4></div>
+                    <div class = "divider"></div>
+                    <div class = "social-bar">
+                        <a href = "#"><i class="fab fa-facebook-f"></i></a>
+                        <a href = "#"><i class="fab fa-twitter"></i></i></a>
+                        <a href = "#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
