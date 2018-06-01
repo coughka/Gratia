@@ -66,16 +66,3 @@ textarea {
     margin-bottom:5rem;
 }
 
-@media only screen and (max-width: 425px) {
-    form {
-        width:95%;
-    }
-
-    .book-a-table {
-        margin-bottom:2.5rem;
-    }
-
-    .footer-content .divider {
-        display:none;
-    }
-}

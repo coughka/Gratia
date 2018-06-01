@@ -53,31 +53,4 @@
     padding-top:1.25rem;
 }
 
-@media only screen and (max-width: 425px) {
-    .dish-photo, .dish-description {
-        grid-column:span 12;
-    }
 
-    .dish-photo img {
-        width:100%;
-        height: auto;
-    }
-
-    .chicken-burger-content {
-        width:95%;
-        height:auto;
-    }
-
-    .components {
-        width:95%;
-        margin:0 auto;
-    }
-
-    .description-title h3 {
-        margin:1rem 0;
-    }
-
-    .chicken-burger {
-        margin:2.5rem 0;
-    }
-}
